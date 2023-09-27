@@ -1,0 +1,35 @@
+{
+  "name": "telegram2mt5copier",
+  "description": "I'll provide you with the compiled TypeScript code for the `TradingBot`, `DatabaseManager`, and `TelegramManager` classes. Please note that to compile TypeScript code, you need to set up a TypeScript project and use the `tsc` (TypeScript Compiler) command. Here's how you can set up and compile the code:",
+  "version": "1.0.0",
+  "main": "App.js",
+  "devDependencies": {
+    "@types/chai": "^4.3.6",
+    "@types/dotenv": "^8.2.0",
+    "@types/jest": "^29.5.5",
+    "@types/mocha": "^10.0.1",
+    "@types/node-telegram-bot-api": "^0.61.8",
+    "chai": "^4.3.8",
+    "mocha": "^10.2.0",
+    "ts-node": "^10.9.1"
+  },
+  "scripts": {
+    "test": "npx mocha --require ts-node/register test/tradingBot.test.ts",
+    "dev": "nodemon src/App.ts",
+    "build": "tsc",
+    "prod": "npm run build && node ./dist/App.js"
+  },
+  "dependencies": {
+    "axios": "^1.5.1",
+    "dotenv": "^16.3.1",
+    "input": "^1.0.1",
+    "metaapi.cloud-sdk": "^23.6.3",
+    "mongodb": "^6.1.0",
+    "node-telegram-bot-api": "^0.63.0",
+    "telegram": "^2.18.38",
+    "typescript": "^5.2.2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
